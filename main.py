@@ -1,6 +1,6 @@
 """
  Autovalores e Autovetores de Matrizes
-Tridiagonais Sim´etricas - O Algoritmo QR
+Tridiagonais Simétricas - O Algoritmo QR
     EP1 - MAP3121
 Alunos:
     Kevin Kirsten Lucas     - NªUSP 10853306 - Turma 01
@@ -407,7 +407,8 @@ def calculos_b_c(matriz, posicoes_iniciais):
     frequencias = []
     lista_xi = []
     t = np.arange(0, Configuracoes.TEMPO_TOTAL, Configuracoes.ESCALA)
-    minor_ticks = np.arange(0, Configuracoes.TEMPO_TOTAL, Configuracoes.ESCALA/2)
+    # minor_ticks = np.arange(0, Configuracoes.TEMPO_TOTAL, Configuracoes.ESCALA/2)
+
     for linha in range(len(autovetores_k)):
         xi = 0
         for elemento in range(len(autovetores_k)):
